@@ -4,7 +4,7 @@ version: '3'
 services:
   python:
     build:
-      context: ..
+      context: .
       dockerfile: Dockerfile.python
     user: "${UID:-1000}:${GID:-1000}"
     volumes:
@@ -13,13 +13,13 @@ services:
       - "8888:8888"
     environment:
       - PYTHONPATH=/litreview
-      # Add any environment variables you need
+      - SCHOLAR_API_KEY=${SCHOLAR_API_KEY}
     networks:
       - litreview-network
 
   latex:
     build:
-      context: ..
+      context: .
       dockerfile: Dockerfile.latex
     user: "${UID:-1000}:${GID:-1000}"
     volumes:
