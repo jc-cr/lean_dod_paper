@@ -169,3 +169,12 @@ cython_debug/
 
 # PyPI configuration file
 .pypirc
+
+
+# General
+.env
+Dockerfile
+docker-compose.yaml
+req.txt
+
+.docker/.env
