@@ -8,33 +8,21 @@ services:
       dockerfile: Dockerfile.python
     user: "${UID:-1000}:${GID:-1000}"
     volumes:
-      - ../:/litreview
+      - ../notebook/:/container_workspace
     ports:
       - "8888:8888"
-    environment:
-      - PYTHONPATH=/litreview
-      - SCHOLAR_API_KEY=${SCHOLAR_API_KEY}
-    networks:
-      - litreview-network
 
-  latex:
-    build:
-      context: .
-      dockerfile: Dockerfile.latex
-    user: "${UID:-1000}:${GID:-1000}"
-    volumes:
-      - ../src:/litreview/src
-      - ../output:/litreview/output
-      - ../figures:/litreview/figures
-      - texmf-data:/usr/local/texlive
-    ports:
-      - "3000:3000"  # For LaTeX Workshop if needed
-    working_dir: /litreview
-    networks:
-      - litreview-network
-
-networks:
-  litreview-network:
-
-volumes:
-  texmf-data:
+  latex_dod:
+      user: "${UID:-1000}:${GID:-1000}"
+      build:
+        context: ..
+        dockerfile: .docker/Dockerfile.latex 
+      volumes:
+        - ../src:/project/src
+        - ../output:/project/output
+        - ../figures:/project/figures
+        - ../include:/project/include
+      ports:
+        - "3000:3000"  # For LaTeX Workshop
+      working_dir: /project
+      command: tail -f /dev/null

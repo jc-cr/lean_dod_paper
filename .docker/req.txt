@@ -10,3 +10,11 @@ beautifulsoup4>=4.11.1
 scholarly>=1.7.0
 tqdm>=4.64.0
 pyyaml>=6.0
+XlsxWriter
+scipy
+nltk>=3.7
+networkx>=2.8
+scikit-learn>=1.0
+wordcloud>=1.8.1
+pyvis>=0.3.0
+openpyxl
