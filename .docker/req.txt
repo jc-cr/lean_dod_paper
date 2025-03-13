@@ -18,3 +18,4 @@ scikit-learn>=1.0
 wordcloud>=1.8.1
 pyvis>=0.3.0
 openpyxl
+xlrd >= 2.0.1

@@ -32,6 +32,7 @@
         "cd \"$PWD\" && cd \"../../.docker\" && docker compose exec -T latex_dod synctex view -i %LINE%:%COLUMN%:\"main.tex\" -o \"/project/output/main.pdf\""
     ],
     "cSpell.words": [
-        "greyscale"
+        "greyscale",
+        "Scientometric"
     ]
 }

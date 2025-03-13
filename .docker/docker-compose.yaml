@@ -1,6 +1,4 @@
 # File: .docker/docker-compose.yml
-version: '3'
-
 services:
   python:
     build:
@@ -18,10 +16,10 @@ services:
         context: ..
         dockerfile: .docker/Dockerfile.latex 
       volumes:
-        - ../src:/project/src
-        - ../output:/project/output
-        - ../figures:/project/figures
-        - ../include:/project/include
+        - ../latex/src:/project/src
+        - ../latex/output:/project/output
+        - ../latex/figures:/project/figures
+        - ../latex/include:/project/include
       ports:
         - "3000:3000"  # For LaTeX Workshop
       working_dir: /project
