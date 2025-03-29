@@ -39,3 +39,9 @@
 % Convenient reference command
 \newcommand{\figref}[1]{Figure~\ref{#1}}
 \newcommand{\tabref}[1]{Table~\ref{#1}}
+
+% Tighten up spacing in itemize, enumerate, and description environments
+\setlist{noitemsep, topsep=4pt, parsep=0pt, partopsep=0pt}
+
+% If you want to specifically control just itemize environments
+\setlist[itemize]{noitemsep, topsep=3pt, parsep=0pt, partopsep=0pt, leftmargin=*}
