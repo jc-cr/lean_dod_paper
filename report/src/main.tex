@@ -2,6 +2,8 @@
 \documentclass{article}
 \usepackage{../include/report_style}
 
+\newcommand{\TODO}[1]{\textcolor{red}{TODO: #1}} % for comments
+
 \title{Lean Applications in the Department of Defense}
 \author{Juan Carlos Cruz - ira406}
 \date{ME 5703 Lean Product Development and Service Systems}
@@ -151,19 +153,18 @@
 	As visualized in \figref{fig:theme_distribution_bar}, the majority of the papers (54\%) corresponded to the \textit{Management and Leadership} theme, 35.9\% fell into the \textit{Process Improvement} theme, and 9.2\% fell into the \textit{Continuous Learning} theme.
 	The distribution of themes over the years is shown in \figref{fig:theme_trends}.
 
-
 	\begin{figure}[htbp]
 		\centering
 		\begin{subfigure}[b]{0.48\textwidth}
 			\centering
-			\includegraphics[width=\textwidth,height=0.35\textheight,keepaspectratio]{theme_distribution_bar.png}
+			\includegraphics[width=\textwidth,height=0.35\textheight,keepaspectratio]{theme_distribution_bar.pdf}
 			\caption{Distribution of themes in the literature}
 			\label{fig:theme_distribution_bar}
 		\end{subfigure}
 		\hfill
 		\begin{subfigure}[b]{0.48\textwidth}
 			\centering
-			\includegraphics[width=\textwidth,height=0.35\textheight,keepaspectratio]{theme_trends_over_time.png}
+			\includegraphics[width=\textwidth,height=0.35\textheight,keepaspectratio]{theme_trends_over_time.pdf}
 			\caption{Theme trends over time}
 			\label{fig:theme_trends}
 		\end{subfigure}
@@ -171,13 +172,58 @@
 		\label{fig:theme_analysis}
 	\end{figure}
 
+	\begin{comment}
+		Format:
+		- Lean background, how toyota does things
+
+		For each case study:
+			- Case study summary
+			- Lean analysis
+
+	\end{comment}
+
 	\section{Management and Leadership}
+
+		Toyota's approach to management can be described as Hourensou style management that is multidimensional in nature.
+		Managers communicate openly and information travels up, down, and sideways allowing for the necessary flow of information to the correct parties. 
+
+		This is in contrast to traditional North American style of command and control style management where managers delegate out work and information with little input from subordinates.
+
+		In fact, command-and-control style management also makes it difficult to achieve the necessary communication flows to suppliers and external partners.
+
+		Since the DoD follows is composed of various military entities which traditionally operate on this command-and-control style organization, it can be difficult for lean methodologies to take root in such an entrenched system.
+
+		In the following case studies gathered from our literature review, we see examples which offer insight and examples from lean thinking to existing systems in the DoD.
+
+
+	\subsection{Leadership Development Strategies for Sustaining Organization Performance Through the Upper Echelon Theory \cite{McCants2024}}	
+
+
+
+
+	\subsection{Project Engineers on the Frontline: The Impact of Work-Related Stressors and Turnover Intentions: A Correlational Study \cite{Turner2024}}
+
+
+
+	\subsection{Understanding the Contracting Environment in the AFSB: Army Logistician}
+
 
 
 	\section{Process Improvement}
 
+		Process improvement is a fundamental task for any lean organization. 
+		Improvement comes from building a culture of kaisen (continuous improvement), where non-value adding steps (waste) in a process can be identified and removed.
+
+
 
 	\section{Continuous Learning}
+
+		Building a culture of continuous learning through hansai and kaisen is a cornerstone of the Toyota Way.
+		In the digital age, this learning culture can be amplified through digitization of organizational knowledge and data.
+
+		However, a poor approach to such systems can result in the development of waste if information is not easily accessible at the right time, by the right people.
+
+		In the following case studies we see how DoD groups are addressing the existing methods of knowledge base management and data collection to create a lean and effective organization.
 
 
 
