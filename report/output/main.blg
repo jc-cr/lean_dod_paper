@@ -11,13 +11,13 @@ Database file #1: /project/src/ref.bib
 -- IEEEtran.bst version 1.14 (2015/08/26) by Michael Shell.
 -- http://www.michaelshell.org/tex/ieeetran/bibtex/
 -- See the "IEEEtran_bst_HOWTO.pdf" manual for usage information.
-Warning--empty journal in Turner2024
 Warning--empty journal in McCants2024
+Warning--empty journal in Turner2024
 Warning--empty journal in Malin2020
-Warning--empty journal in VanLaar2023
-Warning--empty journal in Le2023
 Warning--empty journal in Richmond2023
 Warning--empty journal in FunchesAllen2025
+Warning--empty journal in Le2023
+Warning--empty journal in VanLaar2023
 
 Done.
 You've used 10 entries,
