@@ -15,11 +15,16 @@ services:
       build:
         context: ..
         dockerfile: .docker/Dockerfile.latex 
+      # volumes:
+      #   - ../report/src:/project/src
+      #   - ../report/output:/project/output
+      #   - ../report/figures:/project/figures
+      #   - ../report/include:/project/include
       volumes:
-        - ../report/src:/project/src
-        - ../report/output:/project/output
-        - ../report/figures:/project/figures
-        - ../report/include:/project/include
+        - ../slides/src:/project/src
+        - ../slides/output:/project/output
+        - ../slides/figures:/project/figures
+        - ../slides/include:/project/include
       ports:
         - "3000:3000"  # For LaTeX Workshop
       working_dir: /project
