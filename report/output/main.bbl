@@ -103,4 +103,18 @@ N.~Patel, U.~Patel, E.~R. Hawk, II, and K.~Kapadia, ``Stitching the army's data
   \url{https://login.libweb.lib.utsa.edu/login?url=https://www.proquest.com/trade-journals/stitching-armys-data-fabric/docview/2595669220/se-2?accountid=7122}
 \BIBentrySTDinterwordspacing
 
+\bibitem{DIU2023workwithus}
+\BIBentryALTinterwordspacing
+{Defense Innovation Unit}, ``Work with us,'' Defense Innovation Unit, 2023,
+  accessed: 2025-04-29. [Online]. Available:
+  \url{https://www.diu.mil/work-with-us}
+\BIBentrySTDinterwordspacing
+
+\bibitem{GigEagle2022}
+\BIBentryALTinterwordspacing
+------, ``Transforming dod's access to talent: {GigEagle},'' Defense Innovation
+  Unit, 4 2022, accessed: 2025-04-29. [Online]. Available:
+  \url{https://www.diu.mil/latest/gigeagle-agile-talent-development-for-the-dod}
+\BIBentrySTDinterwordspacing
+
 \end{thebibliography}
