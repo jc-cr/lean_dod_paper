@@ -20,45 +20,45 @@ Warning--empty journal in Le2023
 Warning--empty journal in VanLaar2023
 
 Done.
-You've used 10 entries,
+You've used 11 entries,
             4087 wiz_defined-function locations,
-            890 strings with 10373 characters,
-and the built_in function-call counts, 4907 in all, are:
-= -- 418
-> -- 74
+            898 strings with 10604 characters,
+and the built_in function-call counts, 5373 in all, are:
+= -- 453
+> -- 78
 < -- 18
-+ -- 38
-- -- 15
-* -- 248
-:= -- 933
-add.period$ -- 20
-call.type$ -- 10
-change.case$ -- 10
++ -- 40
+- -- 16
+* -- 271
+:= -- 1019
+add.period$ -- 23
+call.type$ -- 11
+change.case$ -- 11
 chr.to.int$ -- 36
-cite$ -- 17
-duplicate$ -- 387
-empty$ -- 389
-format.name$ -- 17
-if$ -- 1058
+cite$ -- 18
+duplicate$ -- 427
+empty$ -- 445
+format.name$ -- 18
+if$ -- 1163
 int.to.chr$ -- 0
-int.to.str$ -- 10
-missing$ -- 61
-newline$ -- 73
-num.names$ -- 10
-pop$ -- 140
+int.to.str$ -- 11
+missing$ -- 68
+newline$ -- 78
+num.names$ -- 11
+pop$ -- 161
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 2
-skip$ -- 374
+skip$ -- 410
 stack$ -- 0
-substring$ -- 106
-swap$ -- 252
+substring$ -- 107
+swap$ -- 273
 text.length$ -- 6
 text.prefix$ -- 0
 top$ -- 5
-type$ -- 10
+type$ -- 11
 warning$ -- 7
-while$ -- 19
-width$ -- 12
-write$ -- 131
+while$ -- 20
+width$ -- 13
+write$ -- 142
 (There were 7 warnings)
