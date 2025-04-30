@@ -1,11 +1,11 @@
 % !TEX root = main.tex
 
-\documentclass[11pt,xcolor={dvipsnames},hyperref={pdftex,pdfpagemode=UseNone,hidelinks,pdfdisplaydoctitle=true},usepdftitle=false]{beamer}
+\documentclass[aspectratio=169,11pt,xcolor={dvipsnames},hyperref={pdftex,pdfpagemode=UseNone,hidelinks,pdfdisplaydoctitle=true},usepdftitle=false]{beamer}
 \usepackage{../include/slide}
 \usepackage{tikz}
 
 
-\title{}
+\title{Lean Applications in the Department of Defense}
 \author{Juan Carlos Cruz - ira406}
 \date{ME 5703 Lean Product Development and Service Systems}
 
@@ -17,9 +17,196 @@
     \end{frame}
     
     \begin{frame}{Introduction}
-
+      \begin{itemize}
+        \item DoD traditionally viewed as bureaucratic and slow-moving
+        \item Study investigates lean/six-sigma implementation within DoD
+        \item Scientometric review of 465 documents (1992-2025)
+        \item Case study examination of notable works from the dataset and out of dataset example
+      \end{itemize}
     \end{frame}
 
+
+    \begin{frame}{Literature Search}
+      \begin{itemize}
+        \item In ProQuest create a search as:\\
+          \begin{minipage}{\linewidth}
+          \begin{spacing}{0.8}
+          \noindent\texttt{AB("Department of Defense" OR "DoD" OR "DOD" OR "U.S. Army" OR} \\
+          \texttt{"Department of the Army" OR "U.S. Navy" OR "Department of the Navy" OR} \\
+          \texttt{"U.S. Air Force" OR "Department of the Air Force" OR "U.S. Marine Corps" OR} \\
+          \texttt{"U.S. Space Force" OR "National Security Agency" OR "NSA" OR} \\
+          \texttt{"Defense Intelligence Agency" OR "DIA" OR "National Geospatial-Intelligence} \\
+          \texttt{Agency" OR "NGA" OR "National Reconnaissance Office" OR "NRO")} \\
+          \texttt{AND FT("six sigma" OR "6$\sigma$" OR "lean six sigma" OR} \\
+          \texttt{"continuous process improvement" OR "LSS") AND LA(EN)}
+          \end{spacing}
+          \end{minipage}
+        \item 465 documents after cleaning are exported to a spreadsheet.
+      \end{itemize}
+    \end{frame}
+
+
+    \begin{frame}{Scientometric Analysis}
+      \begin{itemize}
+        \item 2 Step Python program to analyze publication trends and then classify themes
+        \begin{enumerate}
+          \item Analyze abstracts and publication data for trends then use Latent Dirichlet Analysis on abstract to extract themes
+          \item When themes extracted create a list of lean keywords related to that theme (Ex. Process Improvement: process, improvement, quality...), and classify abstracts similarity to theme
+        \end{enumerate}
+        \item Publication trends: Increase from 1992-2017, decline after 2017
+        \item Document types: Primarily Theses and Trade journals
+        \item Three themes identified: Management (54\%), Process Improvement (36\%), Continuous Learning (9\%)
+      \end{itemize}
+    \end{frame}
+
+
+
+    \begin{frame}{Management and Leadership - Overview}
+      \begin{itemize}
+        \item Toyota's Hourensou vs. DoD's command-and-control
+        \item Challenge: Implementing lean in hierarchical systems
+        \item Case studies show adaptation to DoD structures
+        \item Focus on communication, knowledge flow, and supplier relationships
+      \end{itemize}
+    \end{frame}
+
+    \begin{frame}{Case Study: Leadership Development Strategies}
+      \begin{itemize}
+        \item McCants (2024): Leadership transitions in Army
+        \item High turnover environment creates disruption risks
+        \item Five themes for successful transitions identified
+        \item Organizational knowledge mirrors \textit{genchi genbutsu}
+        \item Communication emphasis parallels \textit{hourensou}
+      \end{itemize}
+    \end{frame}
+
+    \begin{frame}{Case Study: Project Engineer Turnover}
+      \begin{itemize}
+        \item Turner (2024): Work-related stressors and turnover
+        \item Strong correlation between stress and turnover intention
+        \item Key stressors: workloads, deadlines, complexity, resources
+        \item Directly relates to \textit{muri} (overburden)
+        \item Sustainable performance requires \textit{heijunka}
+      \end{itemize}
+    \end{frame}
+
+    \begin{frame}{Case Study: Contracting Environment in AFSB}
+      \begin{itemize}
+        \item Carlstedt (2020): Army supplier relationship management
+        \item Structured contractor processes with regular reviews
+        \item Standardized documentation supports lean processes
+        \item Balance of accountability and partnership
+        \item Reflects Toyota's \textit{keiretsu} philosophy
+      \end{itemize}
+    \end{frame}
+
+    \begin{frame}{Process Improvement - Overview}
+      \begin{itemize}
+        \item Building culture of \textit{kaizen} (continuous improvement)
+        \item Identifying and removing non-value adding steps
+        \item DoD applications show significant results
+        \item Case studies demonstrate adaptability to defense contexts
+      \end{itemize}
+    \end{frame}
+
+    \begin{frame}{Case Study: Army's Cost-Benefit Analysis}
+      \begin{itemize}
+        \item Malin (2020): Analysis of Change of Command ceremonies
+        \item Army lacks process to evaluate production loss costs
+        \item Costs range from \$18K to \$404K per hour
+        \item Recommended training-based solution and cost tools
+        \item Addresses proper valuation of non-value-added activities
+      \end{itemize}
+    \end{frame}
+
+    \begin{frame}{Case Study: Improving Depot Repair Lead Time}
+      \begin{itemize}
+        \item Richmond (2023): Lean Six Sigma in depot repair
+        \item 80\% of repair lead time was non-value-added
+        \item Implementation: DMAIC and process flow analysis
+        \item Results: 84\% decrease in lead time (114 to 18 days)
+        \item Fill rate increase from 54\% to 70\%
+      \end{itemize}
+    \end{frame}
+
+    \begin{frame}{Case Study: DoD Contract Cost Overruns}
+      \begin{itemize}
+        \item Funches-Allen (2025): ML analysis of 524 contracts
+        \item Random forest model achieved 80\% prediction accuracy
+        \item Top factors: cost estimation (42\%), risk assessment (22\%)
+        \item Cost overruns represent financial \textit{muda}
+        \item Enables targeted improvement initiatives
+      \end{itemize}
+    \end{frame}
+
+    \begin{frame}{Continuous Learning - Overview}
+      \begin{itemize}
+        \item Building culture through \textit{hansei} and \textit{kaizen}
+        \item Digital knowledge management amplifies learning
+        \item Information must be accessible at right time by right people
+        \item DoD initiatives focus on data-driven learning
+      \end{itemize}
+    \end{frame}
+
+    \begin{frame}{Case Study: PTSD Diagnosis Tool}
+      \begin{itemize}
+        \item Le (2023): Classification Automation Tool (CAT)
+        \item ML ensemble methods improve diagnosis accuracy
+        \item Diagnostic errors framed as waste
+        \item Identified key PTSD predictors in veterans
+        \item Reduces false positives and negatives
+      \end{itemize}
+    \end{frame}
+
+    \begin{frame}{Case Study: Army Knowledge Management}
+      \begin{itemize}
+        \item VanLaar (2023): KM implementation study
+        \item "People" component ranked lowest in maturity
+        \item Tacit knowledge not properly shared
+        \item Four knowledge transfer barriers identified
+        \item Knowledge flow barriers create waste
+      \end{itemize}
+    \end{frame}
+
+    \begin{frame}{Case Study: Army's Data Fabric}
+      \begin{itemize}
+        \item Patel (2021): Data fabric technology implementation
+        \item Addresses data stovepipes and inefficient sharing
+        \item Project Rainmaker enables data synchronization
+        \item Eliminates digital \textit{muda}
+        \item Creates pull-based data system
+      \end{itemize}
+    \end{frame}
+
+    \begin{frame}{Case Study: Defense Innovation Unit}
+      \begin{itemize}
+        \item Established 2015 as DoD's gateway to tech companies
+        \item Only DoD entity focused on commercial technology
+        \item Streamlined acquisition: 60-90 days vs. years
+        \item Demonstrates lean cycle time reduction
+      \end{itemize}
+    \end{frame}
+
+    \begin{frame}{Case Study: GigEagle Project}
+      \begin{itemize}
+        \item DIU talent platform launched 2022
+        \item Matches DoD with Reserve/Guard personnel
+        \item AI/ML matching for short-term projects
+        \item Addresses waste: underutilized talent
+        \item Lean approach to human capital management
+      \end{itemize}
+    \end{frame}
+
+    \begin{frame}{Conclusion}
+      \begin{itemize}
+        \item Lean/Six Sigma has gained traction in DoD despite hierarchical challenges
+        \item Management: Adapting Toyota practices to command structures
+        \item Process Improvement: Significant results (84\% lead time reduction)
+        \item Continuous Learning: Addressing digital information flow
+        \item Publication decline since 2017 suggests maturation or shift
+        \item Lean principles successful even in bureaucratic environments
+      \end{itemize}
+    \end{frame}
     
     \lastslide
 \end{document}
